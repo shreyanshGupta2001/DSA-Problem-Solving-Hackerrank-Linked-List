@@ -1,0 +1,14 @@
+//Language C++
+
+void reversePrint(SinglyLinkedListNode* llist) {
+  
+  SinglyLinkedListNode* p = llist;
+  
+  if(p == NULL)
+  {
+    return;
+  }
+  reversePrint((p->next));
+  cout<<(p->data)<<"\n";
+
+}
